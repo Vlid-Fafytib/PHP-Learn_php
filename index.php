@@ -21,6 +21,14 @@
         //     echo ", $i в кубе = " . ($i * $i * $i) . "</li>\n";
         // }
         
+        // $gg = mt_rand(1, 100);
+        // $name = "VALUE{$gg}";
+        // define($name, 2);
+        // echo constant($name);
+        // echo $name;
+        define("BENCH", 387);
+        echo decbin(BENCH);
+        
     ?>
 </body>
 </html>
