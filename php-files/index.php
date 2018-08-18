@@ -82,9 +82,9 @@
     // usort($arr, function($a, $b) { return $a <=> $b; });
     // for ($i=0; $i < (count($arr)); $i++)
     // echo $arr[$i]." ";
+    
+    echo "Данные из командной строки: {$_SERVER['QUERY_STRING']}";
         
-
-        
-    ?>
+?>
 </body>
 </html>
