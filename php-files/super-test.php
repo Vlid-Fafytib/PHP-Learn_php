@@ -7,7 +7,7 @@
     <title>PHP</title>
 </head>
 <body>
-    <!-- <?php      -->
+    <?php
     // $gg = mt_rand(1, 100);
     // $name = "VALUE{$gg}";
     // define($name, 2);
@@ -83,8 +83,16 @@
 //     if(isset($_REQUEST["doGo"])){
 //                 echo "Ваше имя {$_REQUEST['name']}";
 //         }
-    
-// ?>    
+function silly() {
+    $i = mt_rand();
+    echo "$i<br>";
+}
+
+for ($i=0; $i != 10 ; $i++) { 
+    silly();
+}
+
+?>    
 <!-- //     <form action="<?=$_SERVER['SCRIPT_NAME'] ?>" method="post">
 //         Введите имя:<input type="text" value="" name="name"><br>
 //         Введите пароль:<input type="password" value="" name="pass"><br>
