@@ -29,7 +29,7 @@
             <label>Дата рождения, год: <select name="year" required>
                 <?php 
                     for ($i=10; $i < 100; $i++) { 
-                        echo "<option value='y$i'>19$i</option>";
+                        echo "<option value='$i'>19$i</option>";
                     }
                 ?>
             </select></label>
@@ -37,9 +37,9 @@
                 <?php 
                     for ($i=1; $i < 13; $i++) { 
                         if ($i < 10) {
-                            echo "<option value='m$i'>0$i</option>";
+                            echo "<option value='$i'>0$i</option>";
                         } else {
-                            echo "<option value='m$i'>$i</option>";
+                            echo "<option value='$i'>$i</option>";
                         }
                     }
                 ?>
@@ -48,15 +48,15 @@
                 <?php 
                     for ($i=1; $i < 32; $i++) { 
                         if ($i < 10) {
-                            echo "<option value='d$i'>0$i</option>";
+                            echo "<option value='$i'>0$i</option>";
                         } else {
-                            echo "<option value='d$i'>$i</option>";
+                            echo "<option value='$i'>$i</option>";
                         }
                     }
                 ?>
             </select></label>
         </p>
-        <p><label>Ваш пол:<br> Мужчина <input type="radio" name="gender" value="male" required> <br>Женщина<input type="radio" name="gender" value="famale" required></label></p>
+        <p><label>Ваш пол:<br> Мужчина <input type="radio" name="gender" value="Male" required> <br>Женщина<input type="radio" name="gender" value="Famale" required></label></p>
         <p>
             <input type="submit" value="Зарегистрироваться" name="go">
         </p>
